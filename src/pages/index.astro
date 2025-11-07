@@ -6,26 +6,23 @@ import Card from '../components/Card.astro';
 ---
 
 <BaseLayout>
-  <!-- Hero Section: Strong Visual Hierarchy -->
+  <!-- Hero Section -->
   <Section background="white" padding="lg" class="hero">
     <div class="hero-content">
       <div class="hero-text">
         <h1 class="hero-title">
-          Design That <span class="highlight">Converts</span> Visitors Into Customers
+          Digital experiences that drive <span class="highlight">results</span>
         </h1>
         <p class="hero-description text-large">
-          We don't just make pretty websites. We create strategic, conversion-focused digital experiences that drive measurable results for ambitious brands.
+          We design and build websites for brands that are serious about growth. Clean code, beautiful design, and measurable impact.
         </p>
         <div class="hero-cta">
           <Button variant="accent" size="lg" href="#contact">
-            Start Your Project →
+            Get Started
           </Button>
           <Button variant="primary" size="lg" href="#work">
-            View Our Work
+            View Work
           </Button>
-        </div>
-        <div class="hero-social-proof">
-          <p class="emphasis-low text-small">Trusted by 50+ innovative companies</p>
         </div>
       </div>
       <div class="hero-visual">
@@ -38,134 +35,107 @@ import Card from '../components/Card.astro';
     </div>
   </Section>
 
-  <!-- Value Proposition Section -->
+  <!-- Stats Section -->
   <Section background="gray" padding="lg">
-    <div class="value-prop">
-      <h2 class="section-title text-center">
-        Why Choose Innovista?
-      </h2>
-      <p class="section-subtitle text-center text-large emphasis-low">
-        We combine beautiful design with conversion psychology to create websites that actually work.
-      </p>
-
-      <div class="stats-grid">
-        <div class="stat-item">
-          <div class="stat-number">127%</div>
-          <div class="stat-label">Average Conversion Increase</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">3.2x</div>
-          <div class="stat-label">ROI for Our Clients</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">98%</div>
-          <div class="stat-label">Client Satisfaction Rate</div>
-        </div>
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-number">127%</div>
+        <div class="stat-label">Average conversion increase</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">3.2x</div>
+        <div class="stat-label">Return on investment</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">98%</div>
+        <div class="stat-label">Client satisfaction</div>
       </div>
     </div>
   </Section>
 
-  <!-- Services Section: Clear CTAs -->
+  <!-- Services Section -->
   <Section background="white" padding="lg" class="services" id="services">
     <h2 class="section-title text-center">
-      Our Services
+      What we do
     </h2>
-    <p class="section-subtitle text-center text-large emphasis-low">
-      End-to-end solutions that transform your digital presence
+    <p class="section-subtitle text-center text-large">
+      Full-service design and development for modern brands
     </p>
 
     <div class="services-grid">
-      <Card
-        title="Web Design & UX"
-        icon="🎨"
-      >
+      <Card title="Web Design">
         <p>
-          Conversion-focused design that prioritizes user experience and drives measurable results. We create interfaces that users love and that meet your business goals.
+          User-focused interfaces that look great and perform better. Every pixel serves a purpose.
         </p>
         <div class="card-cta">
-          <Button variant="primary" href="#contact">Get Started</Button>
+          <Button variant="primary" href="#contact">Learn More</Button>
         </div>
       </Card>
 
-      <Card
-        title="Brand Identity"
-        icon="✨"
-      >
+      <Card title="Brand Identity">
         <p>
-          Stand out in a crowded market with a distinctive brand identity. From logo design to comprehensive brand guidelines, we create memorable brands.
+          Visual systems that make you memorable. Logo, typography, colors—designed to scale with your business.
         </p>
         <div class="card-cta">
-          <Button variant="primary" href="#contact">Get Started</Button>
+          <Button variant="primary" href="#contact">Learn More</Button>
         </div>
       </Card>
 
-      <Card
-        title="Web Development"
-        icon="⚡"
-      >
+      <Card title="Development">
         <p>
-          Lightning-fast, scalable websites built with modern technologies. SEO-optimized, accessible, and designed to perform flawlessly on any device.
+          Fast, scalable websites built with modern tech. Clean code that's easy to maintain and built to last.
         </p>
         <div class="card-cta">
-          <Button variant="primary" href="#contact">Get Started</Button>
+          <Button variant="primary" href="#contact">Learn More</Button>
         </div>
       </Card>
 
-      <Card
-        title="Conversion Strategy"
-        icon="📈"
-      >
+      <Card title="Strategy">
         <p>
-          Data-driven strategies that turn traffic into customers. We analyze user behavior and optimize every element for maximum conversions.
+          Data-informed decisions that move metrics. We optimize for the outcomes that matter to your business.
         </p>
         <div class="card-cta">
-          <Button variant="primary" href="#contact">Get Started</Button>
+          <Button variant="primary" href="#contact">Learn More</Button>
         </div>
       </Card>
 
-      <Card
-        title="Content Strategy"
-        icon="✍️"
-      >
+      <Card title="Content">
         <p>
-          Compelling content that speaks to your audience's emotional drivers. We craft messages that resonate and motivate action.
+          Clear messaging that resonates. We help you say the right thing to the right people at the right time.
         </p>
         <div class="card-cta">
-          <Button variant="primary" href="#contact">Get Started</Button>
+          <Button variant="primary" href="#contact">Learn More</Button>
         </div>
       </Card>
 
-      <Card
-        title="Ongoing Support"
-        icon="🚀"
-      >
+      <Card title="Support">
         <p>
-          Your success is our success. We provide ongoing optimization, updates, and support to ensure your website continues to perform.
+          Ongoing maintenance and optimization. We're here to help your site evolve as your business grows.
         </p>
         <div class="card-cta">
-          <Button variant="primary" href="#contact">Get Started</Button>
+          <Button variant="primary" href="#contact">Learn More</Button>
         </div>
       </Card>
     </div>
   </Section>
 
-  <!-- Portfolio/Work Section -->
+  <!-- Work Section -->
   <Section background="dark" padding="lg" class="work" id="work">
     <h2 class="section-title text-center">
-      Featured Work
+      Selected work
     </h2>
     <p class="section-subtitle text-center text-large">
-      Real results for real businesses
+      Recent projects and their impact
     </p>
 
     <div class="work-grid">
       <div class="work-item">
         <div class="work-image work-image-1"></div>
         <div class="work-info">
-          <h3>TechStart SaaS Platform</h3>
-          <p>Complete redesign that increased conversions by 156% and reduced bounce rate by 42%.</p>
+          <h3>TechStart SaaS</h3>
+          <p>Platform redesign. 156% conversion increase, 42% lower bounce rate.</p>
           <div class="work-tags">
-            <span class="tag">Web Design</span>
+            <span class="tag">Design</span>
             <span class="tag">Development</span>
             <span class="tag">Strategy</span>
           </div>
@@ -175,12 +145,12 @@ import Card from '../components/Card.astro';
       <div class="work-item">
         <div class="work-image work-image-2"></div>
         <div class="work-info">
-          <h3>EcoLife E-commerce</h3>
-          <p>Brand refresh and website redesign that tripled online sales in 6 months.</p>
+          <h3>EcoLife</h3>
+          <p>E-commerce build. 3x online sales in six months.</p>
           <div class="work-tags">
             <span class="tag">Branding</span>
             <span class="tag">E-commerce</span>
-            <span class="tag">UX Design</span>
+            <span class="tag">UX</span>
           </div>
         </div>
       </div>
@@ -188,12 +158,12 @@ import Card from '../components/Card.astro';
       <div class="work-item">
         <div class="work-image work-image-3"></div>
         <div class="work-info">
-          <h3>FinTech Pro Dashboard</h3>
-          <p>Complex data visualization made simple, improving user engagement by 89%.</p>
+          <h3>FinTech Pro</h3>
+          <p>Dashboard interface. 89% improvement in user engagement.</p>
           <div class="work-tags">
             <span class="tag">UI/UX</span>
             <span class="tag">Web App</span>
-            <span class="tag">Analytics</span>
+            <span class="tag">Data Viz</span>
           </div>
         </div>
       </div>
@@ -201,7 +171,7 @@ import Card from '../components/Card.astro';
 
     <div class="work-cta text-center">
       <Button variant="accent" size="lg" href="#contact">
-        Let's Create Something Amazing
+        Start a project
       </Button>
     </div>
   </Section>
@@ -209,26 +179,26 @@ import Card from '../components/Card.astro';
   <!-- Process Section -->
   <Section background="white" padding="lg" class="process" id="process">
     <h2 class="section-title text-center">
-      Our Process
+      How we work
     </h2>
-    <p class="section-subtitle text-center text-large emphasis-low">
-      A proven methodology that delivers results every time
+    <p class="section-subtitle text-center text-large">
+      A structured approach from concept to launch
     </p>
 
     <div class="process-grid">
       <div class="process-step">
         <div class="step-number">01</div>
-        <h3>Discovery & Strategy</h3>
+        <h3>Discovery</h3>
         <p>
-          We dive deep into your business, audience, and goals. Understanding your users' emotional drivers and pain points is key to creating effective design.
+          We start by understanding your business, goals, and users. Research informs every decision.
         </p>
       </div>
 
       <div class="process-step">
         <div class="step-number">02</div>
-        <h3>Design & Testing</h3>
+        <h3>Design</h3>
         <p>
-          We create designs focused on visual hierarchy and scannability. Every element is placed strategically to guide users toward conversion.
+          High-fidelity designs focused on usability and impact. We iterate until it's right.
         </p>
       </div>
 
@@ -236,39 +206,39 @@ import Card from '../components/Card.astro';
         <div class="step-number">03</div>
         <h3>Development</h3>
         <p>
-          Clean, modern code that's fast, accessible, and SEO-optimized. We build websites that work flawlessly across all devices and browsers.
+          Clean code, modern stack. Fast, accessible, and built to scale with your business.
         </p>
       </div>
 
       <div class="process-step">
         <div class="step-number">04</div>
-        <h3>Launch & Optimize</h3>
+        <h3>Launch & Growth</h3>
         <p>
-          We launch, monitor, and continuously optimize. Real user data drives improvements that maximize your ROI over time.
+          Ship to production, measure performance, and continuously improve based on data.
         </p>
       </div>
     </div>
   </Section>
 
-  <!-- Contact/CTA Section: High Contrast -->
+  <!-- Contact Section -->
   <Section background="gradient" padding="lg" class="contact" id="contact">
     <div class="contact-content">
       <h2 class="section-title text-center">
-        Ready to Transform Your Digital Presence?
+        Let's build something
       </h2>
       <p class="section-subtitle text-center text-large">
-        Let's create a website that doesn't just look good—it drives real business results.
+        Ready to start your project? Get in touch.
       </p>
 
       <div class="contact-cta">
         <Button variant="accent" size="lg" href="mailto:hello@innovistadesign.com">
-          Start Your Project Today
+          Email us
         </Button>
       </div>
 
       <div class="contact-info">
         <p class="text-center">
-          Or email us at <a href="mailto:hello@innovistadesign.com" class="contact-link">hello@innovistadesign.com</a>
+          <a href="mailto:hello@innovistadesign.com" class="contact-link">hello@innovistadesign.com</a>
         </p>
       </div>
     </div>
@@ -281,6 +251,20 @@ import Card from '../components/Card.astro';
     min-height: calc(100vh - 80px);
     display: flex;
     align-items: center;
+    position: relative;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1400px;
+    height: 100%;
+    background: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.15) 0%, transparent 50%);
+    pointer-events: none;
   }
 
   .hero-content {
@@ -288,6 +272,8 @@ import Card from '../components/Card.astro';
     grid-template-columns: 1fr;
     gap: var(--space-3xl);
     align-items: center;
+    position: relative;
+    z-index: 1;
   }
 
   @media (min-width: 1024px) {
@@ -297,8 +283,8 @@ import Card from '../components/Card.astro';
   }
 
   .hero-title {
-    font-size: clamp(2.5rem, 6vw, 4.5rem);
-    line-height: 1.1;
+    font-size: clamp(3rem, 8vw, 5.5rem);
+    line-height: 1.05;
     margin-bottom: var(--space-lg);
     animation: fadeInUp 0.8s ease-out;
   }
@@ -311,9 +297,10 @@ import Card from '../components/Card.astro';
   }
 
   .hero-description {
-    color: var(--color-gray-700);
+    color: var(--color-gray-400);
     margin-bottom: var(--space-xl);
     animation: fadeInUp 0.8s ease-out 0.2s backwards;
+    max-width: 600px;
   }
 
   .hero-cta {
@@ -324,9 +311,6 @@ import Card from '../components/Card.astro';
     animation: fadeInUp 0.8s ease-out 0.4s backwards;
   }
 
-  .hero-social-proof {
-    animation: fadeInUp 0.8s ease-out 0.6s backwards;
-  }
 
   /* Hero Visual */
   .hero-visual {
@@ -401,42 +385,43 @@ import Card from '../components/Card.astro';
     margin: 0 auto var(--space-3xl);
   }
 
-  /* Value Prop / Stats */
+  /* Stats Section */
   .stats-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: var(--space-xl);
-    margin-top: var(--space-3xl);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-2xl);
+    max-width: 1000px;
+    margin: 0 auto;
   }
 
   .stat-item {
     text-align: center;
-    padding: var(--space-xl);
-    background: var(--color-white);
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-md);
-    transition: transform var(--transition-base);
+    padding: var(--space-2xl) var(--space-xl);
+    background: transparent;
+    border-top: 2px solid rgba(99, 102, 241, 0.5);
+    transition: all var(--transition-base);
   }
 
   .stat-item:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-xl);
+    border-top-color: var(--color-brand-primary);
   }
 
   .stat-number {
-    font-size: clamp(2.5rem, 4vw, 3.5rem);
-    font-weight: 700;
+    font-size: clamp(3rem, 5vw, 4rem);
+    font-weight: 800;
     background: linear-gradient(135deg, var(--color-brand-primary), var(--color-brand-secondary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     margin-bottom: var(--space-sm);
+    letter-spacing: -0.02em;
   }
 
   .stat-label {
-    color: var(--color-gray-700);
-    font-size: 1rem;
-    font-weight: 500;
+    color: var(--color-gray-400);
+    font-size: 0.95rem;
+    font-weight: 400;
+    text-transform: capitalize;
   }
 
   /* Services Grid */
@@ -461,34 +446,36 @@ import Card from '../components/Card.astro';
   }
 
   .work-item {
-    background: var(--color-gray-800);
+    background: var(--color-dark-secondary);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: var(--radius-lg);
     overflow: hidden;
-    transition: transform var(--transition-base);
+    transition: all var(--transition-base);
   }
 
   .work-item:hover {
     transform: translateY(-8px);
+    border-color: rgba(255, 255, 255, 0.1);
   }
 
   .work-image {
     width: 100%;
-    height: 300px;
+    height: 320px;
     background-size: cover;
     background-position: center;
-    background-color: var(--color-gray-700);
+    position: relative;
   }
 
   .work-image-1 {
-    background: linear-gradient(135deg, var(--color-brand-primary), var(--color-brand-secondary));
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.8), rgba(139, 92, 246, 0.8));
   }
 
   .work-image-2 {
-    background: linear-gradient(135deg, var(--color-accent-secondary), var(--color-brand-primary));
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.8), rgba(99, 102, 241, 0.8));
   }
 
   .work-image-3 {
-    background: linear-gradient(135deg, var(--color-brand-secondary), var(--color-accent-primary));
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.8), rgba(245, 158, 11, 0.8));
   }
 
   .work-info {
@@ -513,11 +500,13 @@ import Card from '../components/Card.astro';
 
   .tag {
     display: inline-block;
-    padding: 0.25rem 0.75rem;
-    background: var(--color-gray-700);
-    color: var(--color-gray-300);
+    padding: 0.35rem 0.85rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--color-gray-400);
     border-radius: var(--radius-sm);
-    font-size: 0.875rem;
+    font-size: 0.8rem;
+    font-weight: 500;
   }
 
   /* Process Grid */
@@ -552,7 +541,7 @@ import Card from '../components/Card.astro';
   }
 
   .process-step p {
-    color: var(--color-gray-700);
+    color: var(--color-gray-400);
     line-height: 1.7;
   }
 
