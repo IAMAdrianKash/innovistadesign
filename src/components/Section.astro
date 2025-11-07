@@ -1,0 +1,90 @@
+---
+export interface Props {
+  background?: 'white' | 'gray' | 'dark' | 'gradient';
+  padding?: 'sm' | 'md' | 'lg';
+  class?: string;
+}
+
+const {
+  background = 'white',
+  padding = 'lg',
+  class: className = ''
+} = Astro.props;
+---
+
+<section class={`section section-${background} section-padding-${padding} ${className}`}>
+  <div class="container">
+    <slot />
+  </div>
+</section>
+
+<style>
+  .section {
+    width: 100%;
+    position: relative;
+  }
+
+  /* Padding Options */
+  .section-padding-sm {
+    padding: var(--space-2xl) 0;
+  }
+
+  .section-padding-md {
+    padding: var(--space-3xl) 0;
+  }
+
+  .section-padding-lg {
+    padding: 5rem 0;
+  }
+
+  @media (min-width: 1024px) {
+    .section-padding-lg {
+      padding: 7rem 0;
+    }
+  }
+
+  /* Background Options - 60% dominant colors */
+  .section-white {
+    background: var(--color-white);
+  }
+
+  .section-gray {
+    background: var(--color-gray-100);
+  }
+
+  .section-dark {
+    background: var(--color-dark);
+    color: var(--color-white);
+  }
+
+  .section-dark h1,
+  .section-dark h2,
+  .section-dark h3,
+  .section-dark h4,
+  .section-dark h5,
+  .section-dark h6 {
+    color: var(--color-white);
+  }
+
+  .section-dark p {
+    color: var(--color-gray-300);
+  }
+
+  .section-gradient {
+    background: linear-gradient(135deg, var(--color-brand-primary) 0%, var(--color-brand-secondary) 100%);
+    color: var(--color-white);
+  }
+
+  .section-gradient h1,
+  .section-gradient h2,
+  .section-gradient h3,
+  .section-gradient h4,
+  .section-gradient h5,
+  .section-gradient h6 {
+    color: var(--color-white);
+  }
+
+  .section-gradient p {
+    color: var(--color-gray-100);
+  }
+</style>

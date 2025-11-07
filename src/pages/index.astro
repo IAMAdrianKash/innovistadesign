@@ -1,0 +1,600 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Section from '../components/Section.astro';
+import Button from '../components/Button.astro';
+import Card from '../components/Card.astro';
+---
+
+<BaseLayout>
+  <!-- Hero Section: Strong Visual Hierarchy -->
+  <Section background="white" padding="lg" class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">
+          Design That <span class="highlight">Converts</span> Visitors Into Customers
+        </h1>
+        <p class="hero-description text-large">
+          We don't just make pretty websites. We create strategic, conversion-focused digital experiences that drive measurable results for ambitious brands.
+        </p>
+        <div class="hero-cta">
+          <Button variant="accent" size="lg" href="#contact">
+            Start Your Project →
+          </Button>
+          <Button variant="primary" size="lg" href="#work">
+            View Our Work
+          </Button>
+        </div>
+        <div class="hero-social-proof">
+          <p class="emphasis-low text-small">Trusted by 50+ innovative companies</p>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-shapes">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="shape shape-3"></div>
+        </div>
+      </div>
+    </div>
+  </Section>
+
+  <!-- Value Proposition Section -->
+  <Section background="gray" padding="lg">
+    <div class="value-prop">
+      <h2 class="section-title text-center">
+        Why Choose Innovista?
+      </h2>
+      <p class="section-subtitle text-center text-large emphasis-low">
+        We combine beautiful design with conversion psychology to create websites that actually work.
+      </p>
+
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">127%</div>
+          <div class="stat-label">Average Conversion Increase</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">3.2x</div>
+          <div class="stat-label">ROI for Our Clients</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">98%</div>
+          <div class="stat-label">Client Satisfaction Rate</div>
+        </div>
+      </div>
+    </div>
+  </Section>
+
+  <!-- Services Section: Clear CTAs -->
+  <Section background="white" padding="lg" class="services" id="services">
+    <h2 class="section-title text-center">
+      Our Services
+    </h2>
+    <p class="section-subtitle text-center text-large emphasis-low">
+      End-to-end solutions that transform your digital presence
+    </p>
+
+    <div class="services-grid">
+      <Card
+        title="Web Design & UX"
+        icon="🎨"
+      >
+        <p>
+          Conversion-focused design that prioritizes user experience and drives measurable results. We create interfaces that users love and that meet your business goals.
+        </p>
+        <div class="card-cta">
+          <Button variant="primary" href="#contact">Get Started</Button>
+        </div>
+      </Card>
+
+      <Card
+        title="Brand Identity"
+        icon="✨"
+      >
+        <p>
+          Stand out in a crowded market with a distinctive brand identity. From logo design to comprehensive brand guidelines, we create memorable brands.
+        </p>
+        <div class="card-cta">
+          <Button variant="primary" href="#contact">Get Started</Button>
+        </div>
+      </Card>
+
+      <Card
+        title="Web Development"
+        icon="⚡"
+      >
+        <p>
+          Lightning-fast, scalable websites built with modern technologies. SEO-optimized, accessible, and designed to perform flawlessly on any device.
+        </p>
+        <div class="card-cta">
+          <Button variant="primary" href="#contact">Get Started</Button>
+        </div>
+      </Card>
+
+      <Card
+        title="Conversion Strategy"
+        icon="📈"
+      >
+        <p>
+          Data-driven strategies that turn traffic into customers. We analyze user behavior and optimize every element for maximum conversions.
+        </p>
+        <div class="card-cta">
+          <Button variant="primary" href="#contact">Get Started</Button>
+        </div>
+      </Card>
+
+      <Card
+        title="Content Strategy"
+        icon="✍️"
+      >
+        <p>
+          Compelling content that speaks to your audience's emotional drivers. We craft messages that resonate and motivate action.
+        </p>
+        <div class="card-cta">
+          <Button variant="primary" href="#contact">Get Started</Button>
+        </div>
+      </Card>
+
+      <Card
+        title="Ongoing Support"
+        icon="🚀"
+      >
+        <p>
+          Your success is our success. We provide ongoing optimization, updates, and support to ensure your website continues to perform.
+        </p>
+        <div class="card-cta">
+          <Button variant="primary" href="#contact">Get Started</Button>
+        </div>
+      </Card>
+    </div>
+  </Section>
+
+  <!-- Portfolio/Work Section -->
+  <Section background="dark" padding="lg" class="work" id="work">
+    <h2 class="section-title text-center">
+      Featured Work
+    </h2>
+    <p class="section-subtitle text-center text-large">
+      Real results for real businesses
+    </p>
+
+    <div class="work-grid">
+      <div class="work-item">
+        <div class="work-image work-image-1"></div>
+        <div class="work-info">
+          <h3>TechStart SaaS Platform</h3>
+          <p>Complete redesign that increased conversions by 156% and reduced bounce rate by 42%.</p>
+          <div class="work-tags">
+            <span class="tag">Web Design</span>
+            <span class="tag">Development</span>
+            <span class="tag">Strategy</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="work-item">
+        <div class="work-image work-image-2"></div>
+        <div class="work-info">
+          <h3>EcoLife E-commerce</h3>
+          <p>Brand refresh and website redesign that tripled online sales in 6 months.</p>
+          <div class="work-tags">
+            <span class="tag">Branding</span>
+            <span class="tag">E-commerce</span>
+            <span class="tag">UX Design</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="work-item">
+        <div class="work-image work-image-3"></div>
+        <div class="work-info">
+          <h3>FinTech Pro Dashboard</h3>
+          <p>Complex data visualization made simple, improving user engagement by 89%.</p>
+          <div class="work-tags">
+            <span class="tag">UI/UX</span>
+            <span class="tag">Web App</span>
+            <span class="tag">Analytics</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-cta text-center">
+      <Button variant="accent" size="lg" href="#contact">
+        Let's Create Something Amazing
+      </Button>
+    </div>
+  </Section>
+
+  <!-- Process Section -->
+  <Section background="white" padding="lg" class="process" id="process">
+    <h2 class="section-title text-center">
+      Our Process
+    </h2>
+    <p class="section-subtitle text-center text-large emphasis-low">
+      A proven methodology that delivers results every time
+    </p>
+
+    <div class="process-grid">
+      <div class="process-step">
+        <div class="step-number">01</div>
+        <h3>Discovery & Strategy</h3>
+        <p>
+          We dive deep into your business, audience, and goals. Understanding your users' emotional drivers and pain points is key to creating effective design.
+        </p>
+      </div>
+
+      <div class="process-step">
+        <div class="step-number">02</div>
+        <h3>Design & Testing</h3>
+        <p>
+          We create designs focused on visual hierarchy and scannability. Every element is placed strategically to guide users toward conversion.
+        </p>
+      </div>
+
+      <div class="process-step">
+        <div class="step-number">03</div>
+        <h3>Development</h3>
+        <p>
+          Clean, modern code that's fast, accessible, and SEO-optimized. We build websites that work flawlessly across all devices and browsers.
+        </p>
+      </div>
+
+      <div class="process-step">
+        <div class="step-number">04</div>
+        <h3>Launch & Optimize</h3>
+        <p>
+          We launch, monitor, and continuously optimize. Real user data drives improvements that maximize your ROI over time.
+        </p>
+      </div>
+    </div>
+  </Section>
+
+  <!-- Contact/CTA Section: High Contrast -->
+  <Section background="gradient" padding="lg" class="contact" id="contact">
+    <div class="contact-content">
+      <h2 class="section-title text-center">
+        Ready to Transform Your Digital Presence?
+      </h2>
+      <p class="section-subtitle text-center text-large">
+        Let's create a website that doesn't just look good—it drives real business results.
+      </p>
+
+      <div class="contact-cta">
+        <Button variant="accent" size="lg" href="mailto:hello@innovistadesign.com">
+          Start Your Project Today
+        </Button>
+      </div>
+
+      <div class="contact-info">
+        <p class="text-center">
+          Or email us at <a href="mailto:hello@innovistadesign.com" class="contact-link">hello@innovistadesign.com</a>
+        </p>
+      </div>
+    </div>
+  </Section>
+</BaseLayout>
+
+<style>
+  /* Hero Section */
+  .hero {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-3xl);
+    align-items: center;
+  }
+
+  @media (min-width: 1024px) {
+    .hero-content {
+      grid-template-columns: 1.2fr 1fr;
+    }
+  }
+
+  .hero-title {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    line-height: 1.1;
+    margin-bottom: var(--space-lg);
+    animation: fadeInUp 0.8s ease-out;
+  }
+
+  .highlight {
+    background: linear-gradient(135deg, var(--color-brand-primary), var(--color-brand-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-description {
+    color: var(--color-gray-700);
+    margin-bottom: var(--space-xl);
+    animation: fadeInUp 0.8s ease-out 0.2s backwards;
+  }
+
+  .hero-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+    animation: fadeInUp 0.8s ease-out 0.4s backwards;
+  }
+
+  .hero-social-proof {
+    animation: fadeInUp 0.8s ease-out 0.6s backwards;
+  }
+
+  /* Hero Visual */
+  .hero-visual {
+    position: relative;
+    height: 500px;
+    display: none;
+  }
+
+  @media (min-width: 1024px) {
+    .hero-visual {
+      display: block;
+    }
+  }
+
+  .hero-shapes {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .shape {
+    position: absolute;
+    border-radius: var(--radius-xl);
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .shape-1 {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(135deg, var(--color-brand-primary), var(--color-brand-secondary));
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+  }
+
+  .shape-2 {
+    width: 200px;
+    height: 200px;
+    background: var(--color-accent-primary);
+    top: 150px;
+    right: 50px;
+    opacity: 0.6;
+    animation-delay: 1s;
+  }
+
+  .shape-3 {
+    width: 150px;
+    height: 150px;
+    background: var(--color-brand-primary-light);
+    bottom: 50px;
+    left: 100px;
+    opacity: 0.5;
+    animation-delay: 2s;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  /* Section Titles */
+  .section-title {
+    margin-bottom: var(--space-md);
+  }
+
+  .section-subtitle {
+    max-width: 700px;
+    margin: 0 auto var(--space-3xl);
+  }
+
+  /* Value Prop / Stats */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-xl);
+    margin-top: var(--space-3xl);
+  }
+
+  .stat-item {
+    text-align: center;
+    padding: var(--space-xl);
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-base);
+  }
+
+  .stat-item:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+  }
+
+  .stat-number {
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--color-brand-primary), var(--color-brand-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: var(--space-sm);
+  }
+
+  .stat-label {
+    color: var(--color-gray-700);
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  /* Services Grid */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-xl);
+    margin-top: var(--space-3xl);
+  }
+
+  .card-cta {
+    margin-top: var(--space-md);
+  }
+
+  /* Work Grid */
+  .work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--space-2xl);
+    margin-top: var(--space-3xl);
+    margin-bottom: var(--space-3xl);
+  }
+
+  .work-item {
+    background: var(--color-gray-800);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: transform var(--transition-base);
+  }
+
+  .work-item:hover {
+    transform: translateY(-8px);
+  }
+
+  .work-image {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--color-gray-700);
+  }
+
+  .work-image-1 {
+    background: linear-gradient(135deg, var(--color-brand-primary), var(--color-brand-secondary));
+  }
+
+  .work-image-2 {
+    background: linear-gradient(135deg, var(--color-accent-secondary), var(--color-brand-primary));
+  }
+
+  .work-image-3 {
+    background: linear-gradient(135deg, var(--color-brand-secondary), var(--color-accent-primary));
+  }
+
+  .work-info {
+    padding: var(--space-xl);
+  }
+
+  .work-info h3 {
+    color: var(--color-white);
+    margin-bottom: var(--space-sm);
+  }
+
+  .work-info p {
+    color: var(--color-gray-300);
+    margin-bottom: var(--space-md);
+  }
+
+  .work-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+  }
+
+  .tag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: var(--color-gray-700);
+    color: var(--color-gray-300);
+    border-radius: var(--radius-sm);
+    font-size: 0.875rem;
+  }
+
+  /* Process Grid */
+  .process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-xl);
+    margin-top: var(--space-3xl);
+  }
+
+  .process-step {
+    text-align: center;
+    padding: var(--space-xl);
+  }
+
+  .step-number {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: linear-gradient(135deg, var(--color-brand-primary), var(--color-brand-secondary));
+    color: var(--color-white);
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: var(--space-md);
+  }
+
+  .process-step h3 {
+    font-size: 1.5rem;
+    margin-bottom: var(--space-sm);
+  }
+
+  .process-step p {
+    color: var(--color-gray-700);
+    line-height: 1.7;
+  }
+
+  /* Contact Section */
+  .contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .contact-cta {
+    display: flex;
+    justify-content: center;
+    margin: var(--space-2xl) 0;
+  }
+
+  .contact-info {
+    margin-top: var(--space-lg);
+  }
+
+  .contact-link {
+    color: var(--color-white);
+    text-decoration: underline;
+    font-weight: 600;
+  }
+
+  .contact-link:hover {
+    color: var(--color-accent-primary);
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 767px) {
+    .hero-cta {
+      flex-direction: column;
+    }
+
+    .hero-cta :global(.btn) {
+      width: 100%;
+    }
+
+    .work-grid,
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

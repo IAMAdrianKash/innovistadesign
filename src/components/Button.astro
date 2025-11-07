@@ -1,0 +1,148 @@
+---
+export interface Props {
+  variant?: 'primary' | 'secondary' | 'accent';
+  size?: 'sm' | 'md' | 'lg';
+  href?: string;
+  type?: 'button' | 'submit';
+  class?: string;
+}
+
+const {
+  variant = 'primary',
+  size = 'md',
+  href,
+  type = 'button',
+  class: className = ''
+} = Astro.props;
+
+const Tag = href ? 'a' : 'button';
+---
+
+<Tag
+  class={`btn btn-${variant} btn-${size} ${className}`}
+  href={href}
+  type={!href ? type : undefined}
+>
+  <slot />
+</Tag>
+
+<style>
+  /* Button Base Styles - NO GHOST BUTTONS, solid backgrounds only */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-family: var(--font-display);
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(-100%);
+    transition: transform var(--transition-base);
+  }
+
+  .btn:hover::before {
+    transform: translateX(0);
+  }
+
+  .btn:active {
+    transform: translateY(1px);
+  }
+
+  .btn:focus-visible {
+    outline: 3px solid var(--color-brand-primary-light);
+    outline-offset: 2px;
+  }
+
+  /* Sizes */
+  .btn-sm {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+
+  .btn-md {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .btn-lg {
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+  }
+
+  /* Primary Variant - High contrast, brand color */
+  .btn-primary {
+    background: var(--color-brand-primary);
+    color: var(--color-white);
+    box-shadow: var(--shadow-md);
+  }
+
+  .btn-primary:hover {
+    background: var(--color-brand-primary-dark);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+  }
+
+  .btn-primary:active {
+    transform: translateY(0);
+  }
+
+  /* Secondary Variant */
+  .btn-secondary {
+    background: var(--color-brand-secondary);
+    color: var(--color-white);
+    box-shadow: var(--shadow-md);
+  }
+
+  .btn-secondary:hover {
+    background: var(--color-brand-secondary-light);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+  }
+
+  .btn-secondary:active {
+    transform: translateY(0);
+  }
+
+  /* Accent Variant - HIGHEST contrast for primary CTAs */
+  .btn-accent {
+    background: var(--color-accent-primary);
+    color: var(--color-dark);
+    box-shadow: var(--shadow-lg);
+    font-weight: 700;
+  }
+
+  .btn-accent:hover {
+    background: #d97706; /* Darker amber */
+    box-shadow: var(--shadow-xl);
+    transform: translateY(-2px);
+  }
+
+  .btn-accent:active {
+    transform: translateY(0);
+  }
+
+  /* Disabled State */
+  .btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+</style>
