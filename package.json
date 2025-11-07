@@ -10,7 +10,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.0.0"
+    "astro": "^4.0.0",
+    "patch-package": "^8.0.0"
   },
   "devDependencies": {
     "@astrojs/check": "^0.3.0",
