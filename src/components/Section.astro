@@ -3,16 +3,18 @@ export interface Props {
   background?: 'white' | 'gray' | 'dark' | 'gradient';
   padding?: 'sm' | 'md' | 'lg';
   class?: string;
+  id?: string;
 }
 
 const {
   background = 'white',
   padding = 'lg',
-  class: className = ''
+  class: className = '',
+  id
 } = Astro.props;
 ---
 
-<section class={`section section-${background} section-padding-${padding} ${className}`}>
+<section class={`section section-${background} section-padding-${padding} ${className}`} id={id}>
   <div class="container">
     <slot />
   </div>
